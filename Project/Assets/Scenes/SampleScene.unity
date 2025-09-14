@@ -415,6 +415,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a55691f0fdb248f486ea5761d220114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MS_
+  xValue: -0.01
+  yValue: 0
+  zValue: -0.01
 --- !u!65 &613064152
 BoxCollider:
   m_ObjectHideFlags: 0
