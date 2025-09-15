@@ -4,15 +4,26 @@ public class MS_ : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 5.0f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         Debug.Log("MS_Mover script has started.");
+        PrintInstructions();
     }
 
-    // Update is called once per frame
     void Update()
     {
+        MovePlayer();
+    }
+
+    void PrintInstructions()
+    {
+        Debug.Log("Welcome to the game!");
+        Debug.Log("Use WASD or arrow keys to move the Dodgy.");
+        Debug.Log("Don't bump into walls!");
+    }
+
+    void MovePlayer()
+    { 
         float xValue = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
         float yValue = 0.0f;
         float zValue = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
